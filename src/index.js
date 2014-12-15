@@ -1,7 +1,7 @@
 var restify = require('restify');
 
 var server = new restify.createServer();
-server.use.(restify.bodyParser());
+server.use(restify.bodyParser());
 
 server.get('/', function(req, res, next) {
     res.send('200 OK');
