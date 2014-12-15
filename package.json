@@ -1,0 +1,16 @@
+{
+  "name": "temp-api",
+  "version": "1.0.0",
+  "description": "Temperature storage API for mini-project",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imdsm/temp-api"
+  },
+  "author": "Adam K Dean <adamkdean@googlemail.com> (http://www.adamkdean.co.uk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imdsm/temp-api/issues"
+  },
+  "homepage": "https://github.com/imdsm/temp-api"
+}
