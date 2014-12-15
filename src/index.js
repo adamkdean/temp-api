@@ -29,7 +29,6 @@ server.post('/submit', function(req, res, next) {
     query = client.query(sql);
     query.on('end', function() {
         client.end();
-
         res.send('200 OK - recorded ' + t1 + ', ' + t2);
     })
 });
