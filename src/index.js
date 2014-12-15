@@ -1,16 +1,13 @@
 var restify = require('restify');
 
 var server = new restify.createServer();
+server.use.(restify.bodyParser());
 
 server.get('/', function(req, res, next) {
     res.send('200 OK');
 });
 
 server.post('/submit', function(req, res, next) {
-
-    res.send('req', req);
-    return;
-
     var api_key = req.body.api_key,
         t1 = req.body.t1,
         t2 = req.body.t2;
