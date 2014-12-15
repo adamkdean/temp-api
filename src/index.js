@@ -1,5 +1,6 @@
 var restify = require('restify'),
-    moment = require('moment');
+    moment = require('moment'),
+    pg = require('pg');
 
 var server = new restify.createServer(),
     connectionString = process.env.DATABASE_URL || '',
