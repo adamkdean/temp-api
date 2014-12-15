@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/imdsm/temp-api",
   "dependencies": {
+    "pg": "^4.1.1",
     "restify": "^2.8.4"
   },
   "engines": {

@@ -4,7 +4,7 @@ var server = new restify.createServer();
 server.use(restify.bodyParser());
 
 server.get('/', function(req, res, next) {
-    res.send('200 OK');
+    res.send('200 OK', process.env);
 });
 
 server.post('/submit', function(req, res, next) {
@@ -19,6 +19,8 @@ server.post('/submit', function(req, res, next) {
         res.send('403 FORBIDDEN', process.env.API_KEY === undefined, api_key != process.env.API_KEY);
         return;
     }
+
+    if ()
 
     res.send('200 OK - recording ' + t1 + ' & ' + t2);
 });
