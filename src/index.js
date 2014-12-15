@@ -7,6 +7,10 @@ server.get('/', function(req, res, next) {
 });
 
 server.post('/submit', function(req, res, next) {
+
+    res.send('req.body', req.body);
+    return;
+
     var api_key = req.body.api_key,
         t1 = req.body.t1,
         t2 = req.body.t2;
