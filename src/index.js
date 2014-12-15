@@ -20,8 +20,8 @@ server.post('/submit', function(req, res, next) {
         return;
     }
 
-    res.send('api %s - t1 %s - t2 %s', api_key, t1, t2);
-
+    //res.send('api %s - t1 %s - t2 %s', api_key, t1, t2);
+    res.send('ok');
 });
 
 server.listen(process.env.PORT, function() {
