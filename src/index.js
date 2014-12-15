@@ -2,7 +2,7 @@ var restify = require('restify'),
     moment = require('moment');
 
 var server = new restify.createServer(),
-    connectionString = proccess.env.DATABASE_URL || '',
+    connectionString = process.env.DATABASE_URL || '',
     client, query, sql;
 
 server.use(restify.bodyParser());
