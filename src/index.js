@@ -12,8 +12,11 @@ server.post('/submit', function(req, res, next) {
         t1 = req.body.t1,
         t2 = req.body.t2;
 
+    console.log('process.env.API_KEY: %s', process.env.API_KEY);
+    console.log('api_key: %s', api_key);
+
     if (process.env.API_KEY === undefined || api_key != process.env.API_KEY) {
-        res.send('403 FORBIDDEN');
+        res.send('403 FORBIDDEN', process.env.API_KEY === undefined, api_key != process.env.API_KEY);
         return;
     }
 
